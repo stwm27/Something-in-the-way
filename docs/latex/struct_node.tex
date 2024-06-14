@@ -1,0 +1,61 @@
+\doxysection{Node Struct Reference}
+\hypertarget{struct_node}{}\label{struct_node}\index{Node@{Node}}
+
+
+Узел односвязного списка, содержащий сокет.  
+
+
+
+
+{\ttfamily \#include $<$main.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_node_a53fadb48f9e0ab0de14872aff989c89e}{Node}} (SOCKET \mbox{\hyperlink{struct_node_a8d1f2764e312bb19231f2cf434275099}{data}})
+\begin{DoxyCompactList}\small\item\em Конструктор узла односвязного списка. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{struct_node_a8d1f2764e312bb19231f2cf434275099}\label{struct_node_a8d1f2764e312bb19231f2cf434275099} 
+SOCKET {\bfseries data}
+\begin{DoxyCompactList}\small\item\em Сокет клиента. \end{DoxyCompactList}\item 
+\Hypertarget{struct_node_a2559a716f69ccaa76d648d9f1b83065e}\label{struct_node_a2559a716f69ccaa76d648d9f1b83065e} 
+\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*} {\bfseries next}
+\begin{DoxyCompactList}\small\item\em Указатель на следующий узел. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Узел односвязного списка, содержащий сокет. 
+
+Этот структурный тип представляет собой элемент односвязного списка, который хранит сокет и указатель на следующий элемент списка. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{struct_node_a53fadb48f9e0ab0de14872aff989c89e}\index{Node@{Node}!Node@{Node}}
+\index{Node@{Node}!Node@{Node}}
+\doxysubsubsection{\texorpdfstring{Node()}{Node()}}
+{\footnotesize\ttfamily \label{struct_node_a53fadb48f9e0ab0de14872aff989c89e} 
+Node\+::\+Node (\begin{DoxyParamCaption}\item[{SOCKET}]{data}{}\end{DoxyParamCaption})}
+
+
+
+Конструктор узла односвязного списка. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Сокет клиента.\\
+\hline
+\end{DoxyParams}
+Создает узел с уникальным сокетом и инициализирует указатель next как nullptr.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Сокет клиента. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+ASUS/\+CLion\+Projects/smth/\mbox{\hyperlink{main_8h}{main.\+h}}\item 
+C\+:/\+Users/\+ASUS/\+CLion\+Projects/smth/\mbox{\hyperlink{main_8cpp}{main.\+cpp}}\end{DoxyCompactItemize}

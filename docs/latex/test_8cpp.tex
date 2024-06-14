@@ -1,0 +1,105 @@
+\doxysection{C\+:/\+Users/\+ASUS/\+CLion\+Projects/smth/test.cpp File Reference}
+\hypertarget{test_8cpp}{}\label{test_8cpp}\index{C:/Users/ASUS/CLionProjects/smth/test.cpp@{C:/Users/ASUS/CLionProjects/smth/test.cpp}}
+
+
+Файл для тестов. Данный файл предназначен для тестирования структур Linked и \doxylink{class_stack}{Stack}. Включаем два хедер файла \doxylink{doctest_8h_source}{doctest.\+h} и \doxylink{main_8h}{main.\+h}.  
+
+
+{\ttfamily \#include "{}doctest.\+h"{}}\newline
+{\ttfamily \#include "{}main.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{test_8cpp_ae1c3f4000fae3ffdfc2de388053cdbef}{TEST\+\_\+\+CASE}} ("{}Linked\+List append and get\+Head"{})
+\begin{DoxyCompactList}\small\item\em Тесты для методов append и get\+Head класса \doxylink{class_linked_list}{Linked\+List}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{test_8cpp_a82b3186f62fabc9c553a961d5060ea7a}{TEST\+\_\+\+CASE}} ("{}Linked\+List remove"{})
+\begin{DoxyCompactList}\small\item\em Тесты для метода remove класса \doxylink{class_linked_list}{Linked\+List}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{test_8cpp_a92ab8dc7a50dad8618e66f7c43f184d5}{TEST\+\_\+\+CASE}} ("{}Stack push and pop"{})
+\begin{DoxyCompactList}\small\item\em Тесты для методов push и pop класса \doxylink{class_stack}{Stack}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{test_8cpp_a960ef9f26892f12302ce4bacec254a22}{TEST\+\_\+\+CASE}} ("{}Stack peek"{})
+\begin{DoxyCompactList}\small\item\em Тесты для метода peek класса \doxylink{class_stack}{Stack}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Файл для тестов. Данный файл предназначен для тестирования структур Linked и \doxylink{class_stack}{Stack}. Включаем два хедер файла \doxylink{doctest_8h_source}{doctest.\+h} и \doxylink{main_8h}{main.\+h}. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{test_8cpp_ae1c3f4000fae3ffdfc2de388053cdbef}\index{test.cpp@{test.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [1/4]}}
+{\footnotesize\ttfamily \label{test_8cpp_ae1c3f4000fae3ffdfc2de388053cdbef} 
+TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{"{}Linked\+List append and get\+Head"{}}]{}{}\end{DoxyParamCaption})}
+
+
+
+Тесты для методов append и get\+Head класса \doxylink{class_linked_list}{Linked\+List}. 
+
+Данный тестовый сулчай проверяет функциональность методов append и get\+Head.
+
+Тесты делают следующие проверки\+: \texorpdfstring{$<$}{<} Проверка, что начальный список пуст.
+
+\texorpdfstring{$<$}{<} Проверка, что первый элемент добавлен правильно.
+
+\texorpdfstring{$<$}{<} Проверка, что в списке только один элемент.
+
+\texorpdfstring{$<$}{<} Проверка, что второй элемент добавлен правильно.
+
+\texorpdfstring{$<$}{<} Проверка, что в списке два элемента.\Hypertarget{test_8cpp_a82b3186f62fabc9c553a961d5060ea7a}\index{test.cpp@{test.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [2/4]}}
+{\footnotesize\ttfamily \label{test_8cpp_a82b3186f62fabc9c553a961d5060ea7a} 
+TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{"{}Linked\+List remove"{}}]{}{}\end{DoxyParamCaption})}
+
+
+
+Тесты для метода remove класса \doxylink{class_linked_list}{Linked\+List}. 
+
+Данный тестовый случай проверяет функциональность метода remove.
+
+Тесты делают следующие проверки\+: \texorpdfstring{$<$}{<} Проверка, что элемент 2 удален правильно.
+
+\texorpdfstring{$<$}{<} Проверка, что список обновлен правильно.
+
+\texorpdfstring{$<$}{<} Проверка, что в списке два элемента.
+
+\texorpdfstring{$<$}{<} Проверка, что элемент 1 удален правильно.
+
+\texorpdfstring{$<$}{<} Проверка, что в списке один элемент.
+
+\texorpdfstring{$<$}{<} Проверка, что список пуст.\Hypertarget{test_8cpp_a960ef9f26892f12302ce4bacec254a22}\index{test.cpp@{test.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [3/4]}}
+{\footnotesize\ttfamily \label{test_8cpp_a960ef9f26892f12302ce4bacec254a22} 
+TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{"{}Stack peek"{}}]{}{}\end{DoxyParamCaption})}
+
+
+
+Тесты для метода peek класса \doxylink{class_stack}{Stack}. 
+
+Этот тестовый случай проверяет функциональность метода peek.
+
+Тест делают следующие проверки\+: \texorpdfstring{$<$}{<} Проверка, что верхний элемент правильный.
+
+\texorpdfstring{$<$}{<} Проверка, что верхний элемент обновлен после извлечения.
+
+\texorpdfstring{$<$}{<} Проверка, что стек пуст и метод peek возвращает пустую строку.\Hypertarget{test_8cpp_a92ab8dc7a50dad8618e66f7c43f184d5}\index{test.cpp@{test.cpp}!TEST\_CASE@{TEST\_CASE}}
+\index{TEST\_CASE@{TEST\_CASE}!test.cpp@{test.cpp}}
+\doxysubsubsection{\texorpdfstring{TEST\_CASE()}{TEST\_CASE()}\hspace{0.1cm}{\footnotesize\ttfamily [4/4]}}
+{\footnotesize\ttfamily \label{test_8cpp_a92ab8dc7a50dad8618e66f7c43f184d5} 
+TEST\+\_\+\+CASE (\begin{DoxyParamCaption}\item[{"{}Stack push and pop"{}}]{}{}\end{DoxyParamCaption})}
+
+
+
+Тесты для методов push и pop класса \doxylink{class_stack}{Stack}. 
+
+Данный тестовый случай проверяет функциональность методов push и pop.
+
+Тесты делают следующие проверки\+: \texorpdfstring{$<$}{<} Проверка, что стек пуст в начале.
+
+\texorpdfstring{$<$}{<} Проверка, что стек не пуст после добавления элементов.
+
+\texorpdfstring{$<$}{<} Проверка, что элементы извлекаются в правильном порядке.
+
+\texorpdfstring{$<$}{<} Проверка, что стек пуст после извлечения всех элементов.

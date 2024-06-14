@@ -1,0 +1,133 @@
+\doxysection{Stack Class Reference}
+\hypertarget{class_stack}{}\label{class_stack}\index{Stack@{Stack}}
+
+
+Класс для работы со стеком.  
+
+
+
+
+{\ttfamily \#include $<$main.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_stack_a14cd1cba325bead4ff0a91bc6eb0f6f5}{Stack}} ()
+\begin{DoxyCompactList}\small\item\em Конструктор стека. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_stack_a8e665e15728d91e7252b950cf54ea0d7}{push}} (std\+::string data)
+\begin{DoxyCompactList}\small\item\em Добавление элемента на вершину стека. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_stack_ac9baf68c9771267d330a550e41576c77}{pop}} ()
+\begin{DoxyCompactList}\small\item\em Удаление и получение элемента с вершины стека. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_stack_a12ddf8772039fc4f811a2733c18c68a6}{peek}} ()
+\begin{DoxyCompactList}\small\item\em Получение элемента с вершины стека без его удаления. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_stack_acfd33dabc532e2706dea1699a4de2636}{is\+Empty}} ()
+\begin{DoxyCompactList}\small\item\em Проверка, пуст ли стек. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_stack_a40bd5dff912f0e5290777c4b46d17809}{\texorpdfstring{$\sim$}{\string~}\+Stack}} ()
+\begin{DoxyCompactList}\small\item\em Деструктор стека. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс для работы со стеком. 
+
+Этот класс представляет методы для управления стеком строковых данных. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_stack_a14cd1cba325bead4ff0a91bc6eb0f6f5}\index{Stack@{Stack}!Stack@{Stack}}
+\index{Stack@{Stack}!Stack@{Stack}}
+\doxysubsubsection{\texorpdfstring{Stack()}{Stack()}}
+{\footnotesize\ttfamily \label{class_stack_a14cd1cba325bead4ff0a91bc6eb0f6f5} 
+Stack\+::\+Stack (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Конструктор стека. 
+
+Создает пустой стек, инициализируя указатель top как nullptr. \Hypertarget{class_stack_a40bd5dff912f0e5290777c4b46d17809}\index{Stack@{Stack}!````~Stack@{\texorpdfstring{$\sim$}{\string~}Stack}}
+\index{````~Stack@{\texorpdfstring{$\sim$}{\string~}Stack}!Stack@{Stack}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Stack()}{\string~Stack()}}
+{\footnotesize\ttfamily \label{class_stack_a40bd5dff912f0e5290777c4b46d17809} 
+Stack\+::\texorpdfstring{$\sim$}{\string~}\+Stack (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Деструктор стека. 
+
+Деструктор стека. Удаляет все узлы.
+
+Удаляет все узлы стека, освобождая занятую память.
+
+Проходит по всему стеку и удаляет каждый узел, освобождая занятую память. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_stack_acfd33dabc532e2706dea1699a4de2636}\index{Stack@{Stack}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!Stack@{Stack}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily \label{class_stack_acfd33dabc532e2706dea1699a4de2636} 
+bool Stack\+::is\+Empty (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Проверка, пуст ли стек. 
+
+\begin{DoxyReturn}{Returns}
+true, если стек пуст, иначе false.
+
+true, если стек пуст, иначе false.
+\end{DoxyReturn}
+Возвращает true, если стек пуст, иначе false. \Hypertarget{class_stack_a12ddf8772039fc4f811a2733c18c68a6}\index{Stack@{Stack}!peek@{peek}}
+\index{peek@{peek}!Stack@{Stack}}
+\doxysubsubsection{\texorpdfstring{peek()}{peek()}}
+{\footnotesize\ttfamily \label{class_stack_a12ddf8772039fc4f811a2733c18c68a6} 
+std\+::string Stack\+::peek (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Получение элемента с вершины стека без его удаления. 
+
+\begin{DoxyReturn}{Returns}
+Строка данных.
+\end{DoxyReturn}
+Возвращает строку данных верхнего узла стека без его удаления.
+
+\begin{DoxyReturn}{Returns}
+Строка данных.
+\end{DoxyReturn}
+Возвращает строку данных верхнего узла стека без его удаления. Если стек пуст, возвращает пустую строку и выводит сообщение об ошибке. \Hypertarget{class_stack_ac9baf68c9771267d330a550e41576c77}\index{Stack@{Stack}!pop@{pop}}
+\index{pop@{pop}!Stack@{Stack}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily \label{class_stack_ac9baf68c9771267d330a550e41576c77} 
+std\+::string Stack\+::pop (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Удаление и получение элемента с вершины стека. 
+
+\begin{DoxyReturn}{Returns}
+Строка данных.
+\end{DoxyReturn}
+Удаляет верхний узел стека и возвращает хранимую в нем строку данных.
+
+\begin{DoxyReturn}{Returns}
+Строка данных.
+\end{DoxyReturn}
+Удаляет верхний узел стека и возвращает хранимую в нем строку данных. Если стек пуст, вовзращает пустую строку и выводит сообщение об ошибке. \Hypertarget{class_stack_a8e665e15728d91e7252b950cf54ea0d7}\index{Stack@{Stack}!push@{push}}
+\index{push@{push}!Stack@{Stack}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily \label{class_stack_a8e665e15728d91e7252b950cf54ea0d7} 
+void Stack\+::push (\begin{DoxyParamCaption}\item[{std\+::string}]{data}{}\end{DoxyParamCaption})}
+
+
+
+Добавление элемента на вершину стека. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Строка данных.\\
+\hline
+\end{DoxyParams}
+Создает новый узел с указанной строкой данных и добавляет его на вершину стека. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+ASUS/\+CLion\+Projects/smth/\mbox{\hyperlink{main_8h}{main.\+h}}\item 
+C\+:/\+Users/\+ASUS/\+CLion\+Projects/smth/\mbox{\hyperlink{main_8cpp}{main.\+cpp}}\end{DoxyCompactItemize}

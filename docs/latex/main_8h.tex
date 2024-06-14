@@ -1,0 +1,102 @@
+\doxysection{C\+:/\+Users/\+ASUS/\+CLion\+Projects/smth/main.h File Reference}
+\hypertarget{main_8h}{}\label{main_8h}\index{C:/Users/ASUS/CLionProjects/smth/main.h@{C:/Users/ASUS/CLionProjects/smth/main.h}}
+
+
+Хедер файл для \doxylink{main_8cpp}{main.\+cpp}.  
+
+
+{\ttfamily \#include $<$winsock2.\+h$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$ws2tcpip.\+h$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_node}{Node}}
+\begin{DoxyCompactList}\small\item\em Узел односвязного списка, содержащий сокет. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_linked_list}{Linked\+List}}
+\begin{DoxyCompactList}\small\item\em Класс для работы с односвязным списком. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_stack_node}{Stack\+Node}}
+\begin{DoxyCompactList}\small\item\em Узел стека, содержащий строку данных. \end{DoxyCompactList}\item 
+class \mbox{\hyperlink{class_stack}{Stack}}
+\begin{DoxyCompactList}\small\item\em Класс для работы со стеком. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8h_a12cfb5e269813ef0ac3a6c223c383969}{Send\+Message\+To\+Client}} (int ID)
+\begin{DoxyCompactList}\small\item\em Функция для отправки сообщения клиенту. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+SOCKET \mbox{\hyperlink{main_8h_a84bb8c6dde7e35293ec1acac62b47ade}{Listen}}
+\begin{DoxyCompactList}\small\item\em Глобальная переменная, представляющая сокет для прослушивания. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_linked_list}{Linked\+List}} \mbox{\hyperlink{main_8h_a05f29fd1c064260e95ea92d8fdf69b1d}{connections\+List}}
+\begin{DoxyCompactList}\small\item\em Глобальная переменная, представляющая список подключенных клиентов. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8h_ab021e213330a9f78890cc2e5968168bc}{Client\+Count}}
+\begin{DoxyCompactList}\small\item\em Глобальная переменная, представляющая количество клиентов. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Хедер файл для \doxylink{main_8cpp}{main.\+cpp}. 
+
+Этот файл содержит определение структур и классов для работы с односвязаным списком и стеком, а также объявляет глобавльные переменные и функции для сетевого взаимодействия. 
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8h_a12cfb5e269813ef0ac3a6c223c383969}\index{main.h@{main.h}!SendMessageToClient@{SendMessageToClient}}
+\index{SendMessageToClient@{SendMessageToClient}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{SendMessageToClient()}{SendMessageToClient()}}
+{\footnotesize\ttfamily \label{main_8h_a12cfb5e269813ef0ac3a6c223c383969} 
+void Send\+Message\+To\+Client (\begin{DoxyParamCaption}\item[{int}]{ID}{}\end{DoxyParamCaption})}
+
+
+
+Функция для отправки сообщения клиенту. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ID} & Идентификатор клиента.\\
+\hline
+\end{DoxyParams}
+Отправляет сообщение клиенту с указанным идентификатором через соответствующий сокет.
+
+Функция для отправки сообщения клиенту.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ID} & Идентификатор клиента.\\
+\hline
+\end{DoxyParams}
+Отправляет сообщение клиенту с указанным идентификатором через соответствующий сокет. Получает сообщение от клиента и пересылает его всем подключенным клиентам. 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{main_8h_ab021e213330a9f78890cc2e5968168bc}\index{main.h@{main.h}!ClientCount@{ClientCount}}
+\index{ClientCount@{ClientCount}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{ClientCount}{ClientCount}}
+{\footnotesize\ttfamily \label{main_8h_ab021e213330a9f78890cc2e5968168bc} 
+int Client\+Count\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Глобальная переменная, представляющая количество клиентов. 
+
+Хранит текущее количество подключенных клиентов. \Hypertarget{main_8h_a05f29fd1c064260e95ea92d8fdf69b1d}\index{main.h@{main.h}!connectionsList@{connectionsList}}
+\index{connectionsList@{connectionsList}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{connectionsList}{connectionsList}}
+{\footnotesize\ttfamily \label{main_8h_a05f29fd1c064260e95ea92d8fdf69b1d} 
+\mbox{\hyperlink{class_linked_list}{Linked\+List}} connections\+List\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Глобальная переменная, представляющая список подключенных клиентов. 
+
+Односвязный список для хранения сокетов всех подключенных клиентов. \Hypertarget{main_8h_a84bb8c6dde7e35293ec1acac62b47ade}\index{main.h@{main.h}!Listen@{Listen}}
+\index{Listen@{Listen}!main.h@{main.h}}
+\doxysubsubsection{\texorpdfstring{Listen}{Listen}}
+{\footnotesize\ttfamily \label{main_8h_a84bb8c6dde7e35293ec1acac62b47ade} 
+SOCKET Listen\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Глобальная переменная, представляющая сокет для прослушивания. 
+
+Этот сокет используется сервером для прослушивания входящих подключений. 

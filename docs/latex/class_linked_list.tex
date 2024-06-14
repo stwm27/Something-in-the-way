@@ -1,0 +1,134 @@
+\doxysection{Linked\+List Class Reference}
+\hypertarget{class_linked_list}{}\label{class_linked_list}\index{LinkedList@{LinkedList}}
+
+
+Класс для работы с односвязным списком.  
+
+
+
+
+{\ttfamily \#include $<$main.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_linked_list_afe7f78983e173f8018927cf2ad11a5aa}{Linked\+List}} ()
+\begin{DoxyCompactList}\small\item\em Конструктор односвязного списка. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_linked_list_a27a66951a659d084a2ff96d345020eb0}{append}} (SOCKET data)
+\begin{DoxyCompactList}\small\item\em Добавление узла в конец односвязного списка. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_linked_list_af02eaa3695918e657f639996eae613c5}{display}} ()
+\begin{DoxyCompactList}\small\item\em Отображение содержимого односвязного списка. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_linked_list_a1cba1fc059374f4d263bf5bece9fa136}{get\+Head}} ()
+\begin{DoxyCompactList}\small\item\em Получение головы односвязного списка. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_linked_list_ab8bca10f77c3661fc90acd021ab9abcd}{remove}} (SOCKET data)
+\begin{DoxyCompactList}\small\item\em Удаление узла из односвязного списка по значению сокета. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_linked_list_a35811ed58ff0d8d9cc9b309b8d8f5111}{\texorpdfstring{$\sim$}{\string~}\+Linked\+List}} ()
+\begin{DoxyCompactList}\small\item\em Деструктор односвязного списка. Удаляет все узлы. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Класс для работы с односвязным списком. 
+
+Этот класс представляет методы для управления односвязным списком, который используется для хранения сокетов подключенных клинетов. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_linked_list_afe7f78983e173f8018927cf2ad11a5aa}\index{LinkedList@{LinkedList}!LinkedList@{LinkedList}}
+\index{LinkedList@{LinkedList}!LinkedList@{LinkedList}}
+\doxysubsubsection{\texorpdfstring{LinkedList()}{LinkedList()}}
+{\footnotesize\ttfamily \label{class_linked_list_afe7f78983e173f8018927cf2ad11a5aa} 
+Linked\+List\+::\+Linked\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Конструктор односвязного списка. 
+
+Создает пустой односязный список, инициализируя указатель head как nullptr. \Hypertarget{class_linked_list_a35811ed58ff0d8d9cc9b309b8d8f5111}\index{LinkedList@{LinkedList}!````~LinkedList@{\texorpdfstring{$\sim$}{\string~}LinkedList}}
+\index{````~LinkedList@{\texorpdfstring{$\sim$}{\string~}LinkedList}!LinkedList@{LinkedList}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}LinkedList()}{\string~LinkedList()}}
+{\footnotesize\ttfamily \label{class_linked_list_a35811ed58ff0d8d9cc9b309b8d8f5111} 
+Linked\+List\+::\texorpdfstring{$\sim$}{\string~}\+Linked\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Деструктор односвязного списка. Удаляет все узлы. 
+
+Удаляет все узлы списка, освобождая занятую память.
+
+Проходит по всему списку и удаляет каждый узел, освобождая занятую память. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_linked_list_a27a66951a659d084a2ff96d345020eb0}\index{LinkedList@{LinkedList}!append@{append}}
+\index{append@{append}!LinkedList@{LinkedList}}
+\doxysubsubsection{\texorpdfstring{append()}{append()}}
+{\footnotesize\ttfamily \label{class_linked_list_a27a66951a659d084a2ff96d345020eb0} 
+void Linked\+List\+::append (\begin{DoxyParamCaption}\item[{SOCKET}]{data}{}\end{DoxyParamCaption})}
+
+
+
+Добавление узла в конец односвязного списка. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Сокет клиента.\\
+\hline
+\end{DoxyParams}
+Создает новый узел с указанным сокетом и добавляет его в конец списка.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Сокет клиента.\\
+\hline
+\end{DoxyParams}
+Создает новый узел с указанным сокетом и добавляет его в конец списка. Если список пуст, новый узел становится его головой. В противном случае узел добавляется после последнего элемнта списка. \Hypertarget{class_linked_list_af02eaa3695918e657f639996eae613c5}\index{LinkedList@{LinkedList}!display@{display}}
+\index{display@{display}!LinkedList@{LinkedList}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily \label{class_linked_list_af02eaa3695918e657f639996eae613c5} 
+void Linked\+List\+::display (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Отображение содержимого односвязного списка. 
+
+Выводит на экран данные всех узлов списка.
+
+Выводит данные всех узлов списка на консоль в формате\+: data1 -\/\texorpdfstring{$>$}{>} data2 -\/\texorpdfstring{$>$}{>} ... -\/\texorpdfstring{$>$}{>} NULL. \Hypertarget{class_linked_list_a1cba1fc059374f4d263bf5bece9fa136}\index{LinkedList@{LinkedList}!getHead@{getHead}}
+\index{getHead@{getHead}!LinkedList@{LinkedList}}
+\doxysubsubsection{\texorpdfstring{getHead()}{getHead()}}
+{\footnotesize\ttfamily \label{class_linked_list_a1cba1fc059374f4d263bf5bece9fa136} 
+\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*} Linked\+List\+::get\+Head (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Получение головы односвязного списка. 
+
+\begin{DoxyReturn}{Returns}
+Указатель на голову списка.
+\end{DoxyReturn}
+Возвращает указатель на первый узел списка. \Hypertarget{class_linked_list_ab8bca10f77c3661fc90acd021ab9abcd}\index{LinkedList@{LinkedList}!remove@{remove}}
+\index{remove@{remove}!LinkedList@{LinkedList}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily \label{class_linked_list_ab8bca10f77c3661fc90acd021ab9abcd} 
+void Linked\+List\+::remove (\begin{DoxyParamCaption}\item[{SOCKET}]{data}{}\end{DoxyParamCaption})}
+
+
+
+Удаление узла из односвязного списка по значению сокета. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Сокет клиента.\\
+\hline
+\end{DoxyParams}
+Удаляет первый узел с указанным сокетом из списка.
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & Сокет клиента.\\
+\hline
+\end{DoxyParams}
+Удаляет первый узел с указанным сокетом из списка. Если узел с указанным сокетом не найден, список остается без изменений. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+ASUS/\+CLion\+Projects/smth/\mbox{\hyperlink{main_8h}{main.\+h}}\item 
+C\+:/\+Users/\+ASUS/\+CLion\+Projects/smth/\mbox{\hyperlink{main_8cpp}{main.\+cpp}}\end{DoxyCompactItemize}

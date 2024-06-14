@@ -1,0 +1,74 @@
+\doxysection{C\+:/\+Users/\+ASUS/\+CLion\+Projects/smth/main.h}
+\hypertarget{main_8h_source}{}\label{main_8h_source}\mbox{\hyperlink{main_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#ifndef\ MAIN\_H}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#define\ MAIN\_H}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#pragma\ comment(lib,\ "{}Ws2\_32.lib"{})}}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <winsock2.h>}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\#include\ <ws2tcpip.h>}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_node}{Node}}\ \{}
+\DoxyCodeLine{00025\ \ \ SOCKET\ \mbox{\hyperlink{struct_node_a8d1f2764e312bb19231f2cf434275099}{data}};\ \ \ \ \ }
+\DoxyCodeLine{00026\ \ \ \mbox{\hyperlink{struct_node}{Node}}\ *\mbox{\hyperlink{struct_node_a2559a716f69ccaa76d648d9f1b83065e}{next}};\ \ \ \ \ \ }
+\DoxyCodeLine{00033\ \ \ \mbox{\hyperlink{struct_node_a53fadb48f9e0ab0de14872aff989c89e}{Node}}(SOCKET\ \mbox{\hyperlink{struct_node_a8d1f2764e312bb19231f2cf434275099}{data}});}
+\DoxyCodeLine{00034\ \};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00041\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_linked_list}{LinkedList}}\ \{}
+\DoxyCodeLine{00042\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00048\ \ \ \mbox{\hyperlink{class_linked_list_afe7f78983e173f8018927cf2ad11a5aa}{LinkedList}}();}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00056\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_linked_list_a27a66951a659d084a2ff96d345020eb0}{append}}(SOCKET\ data);}
+\DoxyCodeLine{00057\ }
+\DoxyCodeLine{00063\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_linked_list_af02eaa3695918e657f639996eae613c5}{display}}();}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00071\ \ \ \mbox{\hyperlink{struct_node}{Node}}\ *\mbox{\hyperlink{class_linked_list_a1cba1fc059374f4d263bf5bece9fa136}{getHead}}();}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00079\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_linked_list_ab8bca10f77c3661fc90acd021ab9abcd}{remove}}(SOCKET\ data);}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00086\ \ \ \mbox{\hyperlink{class_linked_list_a35811ed58ff0d8d9cc9b309b8d8f5111}{\string~LinkedList}}();}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00089\ \ \ \mbox{\hyperlink{struct_node}{Node}}\ *head;\ \ \ \ \ \ }
+\DoxyCodeLine{00090\ \};}
+\DoxyCodeLine{00091\ }
+\DoxyCodeLine{00097\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_stack_node}{StackNode}}\ \{}
+\DoxyCodeLine{00098\ \ \ std::string\ \mbox{\hyperlink{struct_stack_node_a0c302eaba266ebc97813be6506052de0}{data}};\ \ \ \ }
+\DoxyCodeLine{00099\ \ \ \mbox{\hyperlink{struct_stack_node}{StackNode}}\ *\mbox{\hyperlink{struct_stack_node_a29844c489dce02fecbb6a9d5c8126aec}{next}};\ \ \ \ \ }
+\DoxyCodeLine{00100\ }
+\DoxyCodeLine{00107\ \ \ \mbox{\hyperlink{struct_stack_node_a2ff9406eb510131d384dc198e5a08392}{StackNode}}(std::string\ \mbox{\hyperlink{struct_stack_node_a0c302eaba266ebc97813be6506052de0}{data}});}
+\DoxyCodeLine{00108\ \};}
+\DoxyCodeLine{00109\ }
+\DoxyCodeLine{00115\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_stack}{Stack}}\ \{}
+\DoxyCodeLine{00116\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00122\ \ \ \mbox{\hyperlink{class_stack_a14cd1cba325bead4ff0a91bc6eb0f6f5}{Stack}}();}
+\DoxyCodeLine{00123\ }
+\DoxyCodeLine{00130\ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_stack_a8e665e15728d91e7252b950cf54ea0d7}{push}}(std::string\ data);}
+\DoxyCodeLine{00131\ }
+\DoxyCodeLine{00138\ \ \ std::string\ \mbox{\hyperlink{class_stack_ac9baf68c9771267d330a550e41576c77}{pop}}();}
+\DoxyCodeLine{00139\ }
+\DoxyCodeLine{00146\ \ \ std::string\ \mbox{\hyperlink{class_stack_a12ddf8772039fc4f811a2733c18c68a6}{peek}}();}
+\DoxyCodeLine{00147\ }
+\DoxyCodeLine{00152\ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_stack_acfd33dabc532e2706dea1699a4de2636}{isEmpty}}();}
+\DoxyCodeLine{00153\ }
+\DoxyCodeLine{00159\ \ \ \mbox{\hyperlink{class_stack_a40bd5dff912f0e5290777c4b46d17809}{\string~Stack}}();}
+\DoxyCodeLine{00160\ }
+\DoxyCodeLine{00161\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00162\ \ \ \mbox{\hyperlink{struct_stack_node}{StackNode}}\ *top;\ \ \ \ \ \ }
+\DoxyCodeLine{00163\ \};}
+\DoxyCodeLine{00164\ }
+\DoxyCodeLine{00171\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{main_8h_a12cfb5e269813ef0ac3a6c223c383969}{SendMessageToClient}}(\textcolor{keywordtype}{int}\ ID);}
+\DoxyCodeLine{00172\ }
+\DoxyCodeLine{00178\ \textcolor{keyword}{extern}\ SOCKET\ \mbox{\hyperlink{main_8h_a84bb8c6dde7e35293ec1acac62b47ade}{Listen}};}
+\DoxyCodeLine{00179\ }
+\DoxyCodeLine{00185\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{class_linked_list}{LinkedList}}\ \mbox{\hyperlink{main_8h_a05f29fd1c064260e95ea92d8fdf69b1d}{connectionsList}};}
+\DoxyCodeLine{00186\ }
+\DoxyCodeLine{00192\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{main_8h_ab021e213330a9f78890cc2e5968168bc}{ClientCount}};}
+\DoxyCodeLine{00193\ }
+\DoxyCodeLine{00194\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ MAIN\_H}}
+
+\end{DoxyCode}

@@ -1,0 +1,98 @@
+\doxysection{C\+:/\+Users/\+ASUS/\+CLion\+Projects/smth/main.cpp File Reference}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{C:/Users/ASUS/CLionProjects/smth/main.cpp@{C:/Users/ASUS/CLionProjects/smth/main.cpp}}
+
+
+Основной файл программы, реализующий сервер на базе сокетов и использующий односвязный список и стек.  
+
+
+{\ttfamily \#include "{}main.\+h"{}}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{main_8cpp_a12cfb5e269813ef0ac3a6c223c383969}{Send\+Message\+To\+Client}} (int ID)
+\begin{DoxyCompactList}\small\item\em Отправка сообщения клиенту. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Основная функция программы. Инициализирует сервер, принимает подключения клиентов и создает потоки для обработки сообщений. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+SOCKET \mbox{\hyperlink{main_8cpp_a84bb8c6dde7e35293ec1acac62b47ade}{Listen}}
+\begin{DoxyCompactList}\small\item\em Глобальная переменная, представляющая сокет для прослушивания. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_linked_list}{Linked\+List}} \mbox{\hyperlink{main_8cpp_a05f29fd1c064260e95ea92d8fdf69b1d}{connections\+List}}
+\begin{DoxyCompactList}\small\item\em Глобальная переменная, представляющая список подключенных клиентов. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_ab021e213330a9f78890cc2e5968168bc}{Client\+Count}} = 0
+\begin{DoxyCompactList}\small\item\em Глобальная переменная, представляющая количество клиентов. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Основной файл программы, реализующий сервер на базе сокетов и использующий односвязный список и стек. 
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+int main (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Основная функция программы. Инициализирует сервер, принимает подключения клиентов и создает потоки для обработки сообщений. 
+
+Инициализирует сервер, принимает подключения клиентов и создает потоки для обработки сообщений. Также демонстрирует использование односвязного списка и стека.
+
+\begin{DoxyReturn}{Returns}
+Код завершения программы. 
+\end{DoxyReturn}
+\Hypertarget{main_8cpp_a12cfb5e269813ef0ac3a6c223c383969}\index{main.cpp@{main.cpp}!SendMessageToClient@{SendMessageToClient}}
+\index{SendMessageToClient@{SendMessageToClient}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{SendMessageToClient()}{SendMessageToClient()}}
+{\footnotesize\ttfamily \label{main_8cpp_a12cfb5e269813ef0ac3a6c223c383969} 
+void Send\+Message\+To\+Client (\begin{DoxyParamCaption}\item[{int}]{ID}{}\end{DoxyParamCaption})}
+
+
+
+Отправка сообщения клиенту. 
+
+Функция для отправки сообщения клиенту.
+
+
+\begin{DoxyParams}{Parameters}
+{\em ID} & Идентификатор клиента.\\
+\hline
+\end{DoxyParams}
+Отправляет сообщение клиенту с указанным идентификатором через соответствующий сокет. Получает сообщение от клиента и пересылает его всем подключенным клиентам. 
+
+\doxysubsection{Variable Documentation}
+\Hypertarget{main_8cpp_ab021e213330a9f78890cc2e5968168bc}\index{main.cpp@{main.cpp}!ClientCount@{ClientCount}}
+\index{ClientCount@{ClientCount}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{ClientCount}{ClientCount}}
+{\footnotesize\ttfamily \label{main_8cpp_ab021e213330a9f78890cc2e5968168bc} 
+int Client\+Count = 0}
+
+
+
+Глобальная переменная, представляющая количество клиентов. 
+
+Хранит текущее количество подключенных клиентов. \Hypertarget{main_8cpp_a05f29fd1c064260e95ea92d8fdf69b1d}\index{main.cpp@{main.cpp}!connectionsList@{connectionsList}}
+\index{connectionsList@{connectionsList}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{connectionsList}{connectionsList}}
+{\footnotesize\ttfamily \label{main_8cpp_a05f29fd1c064260e95ea92d8fdf69b1d} 
+\mbox{\hyperlink{class_linked_list}{Linked\+List}} connections\+List}
+
+
+
+Глобальная переменная, представляющая список подключенных клиентов. 
+
+Односвязный список для хранения сокетов всех подключенных клиентов. \Hypertarget{main_8cpp_a84bb8c6dde7e35293ec1acac62b47ade}\index{main.cpp@{main.cpp}!Listen@{Listen}}
+\index{Listen@{Listen}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{Listen}{Listen}}
+{\footnotesize\ttfamily \label{main_8cpp_a84bb8c6dde7e35293ec1acac62b47ade} 
+SOCKET Listen}
+
+
+
+Глобальная переменная, представляющая сокет для прослушивания. 
+
+Этот сокет используется сервером для прослушивания входящих подключений. 
